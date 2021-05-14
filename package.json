@@ -6,6 +6,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
+    "prepare": "ng-packagr -p package.json",
     "clean": "rimraf ./compiled && rimraf ./dist",
     "prebuild": "npm run clean",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
